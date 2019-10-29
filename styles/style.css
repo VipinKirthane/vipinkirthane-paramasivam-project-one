@@ -10,11 +10,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     /* border:1px solid crimson; */
 }
 
-
 .wrapper {
     width:90%;
     max-width:375px;
     margin:0 auto;
+}
+
+label {
+    visibility: hidden;
 }
 
 li {
