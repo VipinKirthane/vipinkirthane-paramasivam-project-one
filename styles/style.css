@@ -7,7 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 * {
-    border:1px solid crimson;
+    /* border:1px solid crimson; */
 }
 
 
@@ -481,8 +481,14 @@ footer ul {
     .image-one, 
     .image-two, 
     .image-three {
-        width: calc(100% / 3);
         padding-left:0;
+        width:calc((100% - 20px) / 3);
+        padding-right:0;
+    }
+
+    .image-two {
+        margin-left:10px;
+        margin-right:10px;
     }
 
     .image-three {
@@ -545,17 +551,18 @@ footer ul {
     }
 
     .left-half-bobby-bella {
-        width:calc(50% - 30px);
+        width:50%;
         float:right;
-        padding-left:10px;
-        margin-right:20px;
+        /* padding-left:10px;
+        margin-right:20px; */
+        padding-right:20px;
     }
 
     .right-half-look-at-marco {
         float:left;
-        width:calc(50% - 30px);
-        padding-left:10px;
-        margin-right:20px;
+        width:50%;
+        padding-left:20px;
+        /* margin-right:20px; */
     }
 
     .left-half-bobby-bella h2, 
