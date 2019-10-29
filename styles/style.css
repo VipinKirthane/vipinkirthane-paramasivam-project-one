@@ -16,10 +16,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     margin:0 auto;
 }
 
-label {
-    visibility: hidden;
-}
-
 li {
     list-style: none;
 }
