@@ -698,6 +698,8 @@ footer ul {
     
     .logo {
         font-size:20px;
+        line-height:30px;
+        letter-spacing:0.2px;
         float:left;
     }
 
@@ -715,10 +717,11 @@ footer ul {
     }
     
     header h1 {
-        width:35%;
+        width:40%;
         padding-top:150px;
         font-size:68.8px;
         line-height:63.7px;
+        letter-spacing:0.8px;
     }
 
     .horizontal-main-nav li {
