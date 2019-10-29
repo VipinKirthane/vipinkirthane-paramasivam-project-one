@@ -575,6 +575,7 @@ footer ul {
     .left-half-bobby-bella h2, 
     .right-half-look-at-marco h2 {
         margin-bottom:3px;
+        text-align: left;
     }
 
     .left-half-bobby-bella p,
@@ -723,7 +724,10 @@ footer ul {
     .horizontal-main-nav li {
         font-size:1.1rem;
     }
-    
+
+    .header-2 {
+        padding:30px 0;
+    }
 
     .image-one, 
     .image-three {
@@ -766,13 +770,18 @@ footer ul {
 
     .donations {
         padding-top:50px;
-        padding-bottom:50px;
+        padding-bottom:80px;
     }
 
     .footer-section {
         padding-top:50px;
         padding-bottom:50px;
-        /* height:30vh; */
+    }
+
+    .footer-contact ul {
+        line-height:25px;
+        width:60%;
+        float:left;
     }
 
     .footer-links li {
