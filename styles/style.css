@@ -732,14 +732,14 @@ footer ul {
     .image-one, 
     .image-three {
         padding-right:0;
-        width:calc((100% - 20px)/ 3);
+        width:calc((100% - 60px)/ 3);
     }
 
     .image-two {
-        margin-left:10px;
+        margin-left:30px;
         padding-right:0;
-        margin-right:10px;
-        width:calc((100% - 20px) / 3);
+        margin-right:30px;
+        width:calc((100% - 60px) / 3);
     }
 
     .btn-3 {
