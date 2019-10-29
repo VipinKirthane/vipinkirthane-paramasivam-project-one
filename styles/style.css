@@ -17,7 +17,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 }
 
 li {
-    list-style: none;
+    list-style:none;
 }
 
 a {
@@ -34,9 +34,9 @@ main {
 }
 
 img {
-    width: 100%;
-    max-width: 100%;
-    display: block;
+    width:100%;
+    max-width:100%;
+    display:block;
 }
 
 header {
@@ -54,16 +54,16 @@ h1,h2,h3,h4,h5 {
 }
 
 body {
-    background-color: #D6F1E4;
+    background-color:#D6F1E4;
 }
 
 /* Burger Menu */
 .burger-menu {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    font-size: 2rem;
-    visibility: visible;
+    position:absolute;
+    top:15px;
+    right:25px;
+    font-size:2rem;
+    visibility:visible;
     color:white;
 }
 /* Burger Menu */
@@ -86,7 +86,7 @@ h1,nav {
 .top-nav-about, 
 .top-nav-blog, 
 .top-nav-contact {
-    display: none;
+    display:none;
 }
 
 nav, h2, h3,button {
@@ -102,13 +102,13 @@ p,h1 {
 }
 
 h1 {
-    font-size: 2rem;
-    line-height: 40px;
-    letter-spacing: 0.5px;
+    font-size:2rem;
+    line-height:40px;
+    letter-spacing:0.5px;
     width:60%;
     padding-top:50px;
     font-weight:400;
-    text-shadow: 3px 3px 3px #000; 
+    text-shadow:3px 3px 3px #000; 
 }
 /* Top Page End */
 
@@ -116,7 +116,7 @@ h1 {
 /* Section One Start */
 .header-2, h2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size:1.5rem;
     color:#116500;
     margin-top:40px;
 }
@@ -125,7 +125,7 @@ h2 {
     text-align: left;
     line-height:24px;
     font-size:1.6rem;
-    font-weight: 100;
+    font-weight:100;
     width:100%;
 }
 
@@ -154,7 +154,8 @@ h2 {
     display:none;
 }
 
-.image-five, .image-six {
+.image-five, 
+.image-six {
     max-width:100%;
 }
 
@@ -175,12 +176,12 @@ p {
 button {
     background-color: #116500;
     color:white;
-    padding: 20px 15px;
+    padding:20px 15px;
     font-size:20px;
     display:block;
     width:200px;
     border:0;
-    text-align: center;
+    text-align:center;
     margin:10px auto;
 }
 
@@ -191,7 +192,7 @@ button:hover {
 
 .bobby-bella {
     margin:30px 0;
-    text-align: center;
+    text-align:center;
 }
 
 .btn-2 {
@@ -244,7 +245,7 @@ article {
 
 /* Donation Section Start */
 .donations {
-    text-align: center;
+    text-align:center;
     font-size:50px;
     padding-top:20px;
 }
@@ -294,7 +295,7 @@ article {
     padding:13px 0;
     width:100%;
     text-align: center;
-    font-size:1 rem;
+    font-size:1rem;
     margin:0 auto;
     display:block;
 }
@@ -376,7 +377,8 @@ footer ul {
         padding-left:0%;
     }
 
-    .header-2, .header-3 {
+    .header-2, 
+    .header-3 {
         font-size:2rem;
     }
 
@@ -399,7 +401,8 @@ footer ul {
         padding:0px;
     }
     
-    .left-half-bobby-bella h2, .right-half-look-at-marco h2 {
+    .left-half-bobby-bella h2, 
+    .right-half-look-at-marco h2 {
         margin-top:20px;
 
     }
@@ -560,8 +563,6 @@ footer ul {
     .left-half-bobby-bella {
         width:50%;
         float:right;
-        /* padding-left:10px;
-        margin-right:20px; */
         padding-right:20px;
     }
 
@@ -569,7 +570,6 @@ footer ul {
         float:left;
         width:50%;
         padding-left:20px;
-        /* margin-right:20px; */
     }
 
     .left-half-bobby-bella h2, 
@@ -689,7 +689,6 @@ footer ul {
 }
 
 
-
 @media (min-width:1080px) {
     .wrapper {
         max-width:1200px;
@@ -726,7 +725,8 @@ footer ul {
     }
     
 
-    .image-one, .image-three {
+    .image-one, 
+    .image-three {
         padding-right:0;
         width:calc((100% - 20px)/ 3);
     }
@@ -777,8 +777,7 @@ footer ul {
 
     .footer-links li {
         width:auto;
-    }
-    
+    }   
 }
 
 @media (min-width:1080px) and (max-width:1200px) {
