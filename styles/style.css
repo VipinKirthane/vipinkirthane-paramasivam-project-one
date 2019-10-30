@@ -6,10 +6,20 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
-* {
-    /* border:1px solid crimson; */
-}
 
+/* ===============  Index Start =============== */
+/* 
+1. Main
+2. Burger Menu
+3. Section One, Two, Three, Four, Five
+4. Donation Section
+5. Footer
+6. Media Query 1 to 8
+*/
+/* ===============  Index End  =============== */
+
+
+/* =============== Main Start  =============== */
 .wrapper {
     width:90%;
     max-width:375px;
@@ -33,18 +43,21 @@ main {
     font-size:125%;
 }
 
-img {
+img, 
+header {
     width:100%;
+}
+
+img {
     max-width:100%;
     display:block;
 }
 
 header {
-    background-image: url(../assets/header-image.jpg);
+    background-image:url(../assets/header-image.jpg);
     background-size:cover;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-position:center;
-    width:100%;
     min-height:70vh;
 }
 
@@ -56,8 +69,9 @@ h1,h2,h3,h4,h5 {
 body {
     background-color:#D6F1E4;
 }
+/* ===============   Main End  ======================== */
 
-/* Burger Menu */
+/* ===============  Burger Menu Start  =============== */
 .burger-menu {
     position:absolute;
     top:15px;
@@ -66,9 +80,9 @@ body {
     visibility:visible;
     color:white;
 }
-/* Burger Menu */
+/* ===============  Burger Menu End  ================= */
 
-/* Top Page Start */
+/* ===============  Section One Start  =============== */
 .logo {
     color:white;
     margin-top:0;
@@ -80,36 +94,33 @@ body {
     display:block;
 }
 
-h1,nav {
+h1, nav {
     color:white;
-}
-
-.social-icons{
-    display:none;
 }
 
 .top-nav-home, 
 .top-nav-about, 
 .top-nav-blog, 
-.top-nav-contact {
+.top-nav-contact,
+.social-icons {
     display:none;
 }
 
-h2, h3,button, .footer-links a {
+h2, h3, button, 
+.footer-links a {
     font-family: 'Offside', regular;
 }
 
-nav {
+p, h1, nav {
     font-family: 'Barlow', regular;
-    font-weight: bold;
+}
+
+nav {
+    font-weight:bold;
 }
 
 nav h2 {
     padding-top:20px;
-}
-
-p,h1 {
-    font-family: 'Barlow', sans-serif;
 }
 
 h1 {
@@ -121,27 +132,30 @@ h1 {
     font-weight:400;
     text-shadow:3px 3px 3px #000; 
 }
-/* Top Page End */
+/* ===============  Section One End  =============== */
 
-
-/* Section One Start */
-.header-2, h2 {
-    text-align: center;
+/* ===============  Section Two Start  =============== */
+h2,
+.header-2 {
+    text-align:center;
     font-size:1.5rem;
     color:#116500;
     margin-top:40px;
 }
 
-h2,h3 {   
-    text-align: left;
-    line-height:24px;
-    font-size:1.6rem;
-    font-weight:100;
-    width:100%;
-}
-
 h2 {
     font-size:2rem;
+}
+
+h3 {
+    font-size:1.6rem;
+}
+
+h2, h3 {   
+    text-align:left;
+    line-height:24px;
+    font-weight:100;
+    width:100%;
 }
 
 .image-one, 
@@ -178,19 +192,22 @@ h2 {
     margin-top:40px;
     margin-bottom:40px;
 }
-/* Section One End */
+/* ===============  Section Two End  =============== */
 
 
-/* Section Two Start */
+/* ===============  Section Three Start  =============== */
 p {
     font-size:20px;
     line-height:30px;
     letter-spacing:0.2px;
 }
 
-button {
+button, 
+.btn-2:hover {
     background-color: #116500;
-    color:white;
+}
+
+button {
     padding:20px 15px;
     line-height:20px; 
     font-size:20px;
@@ -201,9 +218,21 @@ button {
     margin:10px auto;
 }
 
-button:hover {
-    background-color: white;
+.btn-2,
+.btn-3,
+button:hover,
+.donations p {
     color:#116500;
+}
+
+button:hover,
+.btn-2 {
+    background-color: white;
+}
+
+button,
+.btn-2:hover {
+    color:white;
 }
 
 .bobby-bella {
@@ -212,54 +241,50 @@ button:hover {
 }
 
 .btn-2 {
-    background-color: white;
-    color:#116500;
     margin-bottom:40px;
 }
 
-.btn-2:hover {
-    background-color: #116500;
-    color:white;
-}
-/* Section Two End */
+/* ===============  Section Three End  =============== */
 
-
-/* Section Three Start */
+/* ===============  Section Four Start  =============== */
 .image-five, 
 .image-six {
     width:100%;
 }
-/* Section Three End */
+/* ===============  Section Four End  =============== */
 
-/* Article Start */
+
+/* ===============  Section Five Start  =============== */
 article {
     background-color:#213C28;
 }
 
-.article-part {
+.article-part, 
+.article-part h2, 
+.btn-3:hover {
     color:white;
+}
+
+.article-part {
     padding-bottom:40px;
 }
 
 .article-part h2 {
     padding:20px 0;
-    color:white;
     text-align: center;
 }
 
 .btn-3 {
     background-color:white;
-    color:#116500;
 }
 
 .btn-3:hover {
     background-color:#116500;
-    color:white;
 }
-/* Article End */
+/* ===============  Section Five End  =============== */
 
 
-/* Donation Section Start */
+/* ===============  Donation Section Start  =============== */
 .donations {
     text-align:center;
     font-size:50px;
@@ -277,18 +302,14 @@ article {
 .donations p {
     font-family: 'Offside', regular;
     font-size:1.7rem;
-    color:#116500;
 }
 
 .donations i:first-child {
     margin-top:20px;
 }
-/* Donation Section End */
+/* ===============  Donation Section End  =============== */
 
-
-
-/* Footer Start */
-
+/* ===============  Footer Start  =============== */
 .footer-section {
     background-color:#213C28;
     width:100%;
@@ -296,21 +317,23 @@ article {
 }
 
 .footer-section h3 {
-    color:white;
-    text-align: center;
     margin:0;
 }
 
 .footer-section p {
-    color:white;
     font-size:18px;
-    text-align: center;
+}
+
+.footer-section h3, 
+.footer-section p {
+    color:white;
+    text-align:center;
 }
 
 .email {    
     padding:13px 0;
     width:100%;
-    text-align: center;
+    text-align:center;
     font-size:1rem;
     margin:0 auto;
     display:block;
@@ -344,29 +367,28 @@ footer ul {
 }
 
 .footer-contact h3 {
-    text-align: left;
+    text-align:left;
     padding-top:30px;
+}
+
+.footer-contact, 
+.footer-links {
+    float:left;
 }
 
 .footer-contact {
     width:60%;
     line-height:20px;
     text-align:left;
-    float:left;
     margin-left:0;
 }
 
 .footer-links {
     width:40%;
-    float:left;
     font-size:1.3rem;
-    line-height: 35px;
-    text-align: right;
+    line-height:35px;
+    text-align:right;
 }
-
-/* .footer-links ul {
-    padding-left:30px;
-} */
 
 .copyright {
     background-color: #2C2D2C;
@@ -379,52 +401,57 @@ footer ul {
     font-size:1rem;
     padding:7px 0;
 }
-/* Footer End */
+/* ===============  Footer End  =============== */
 
 
-/* Mobile-First Design */
-/* Responsive Design Start */
+
+/* ===============  Mobile-First Design      =================== */
+/* ===============  Responsive Design Start  =================== */
+/* ===============  Media Query 1/8 Start    =================== */
 @media (min-width:414px) {
     .wrapper {
         max-width:768px;
         width:90%;
     }
-
+    
     .logo {
         width:30%;
     }
-
-    /* Delete only this horizontal nav */
+    
     .horizontal-main-nav {
         padding-left:0%;
     }
-
+    
     .header-2, 
     .header-3 {
         font-size:2rem;
     }
-
+    
     header {
         height:80vh;
     }
-
+    
     .email {
-        text-align: center;;
+        text-align:center;
         margin:0 auto;
         display:block;
         width:270px;
     }
-
 }
+/* ===============  Media Query 1/8 End ================= */
 
 
+/* ===============  Media Query 2/8 Start =============== */
 @media (min-width:768px) and (max-width:820px) {
     .more-about-park p {
         line-height:19px;
         font-size:0.8rem;
     }
 }
+/* ===============  Media Query 2/8 End ================= */
 
+
+/* ===============  Media Query 3/8 Start =============== */
 @media (min-width:768px) and (max-width:868px) {
     .article-part h2 {
         padding:0px;
@@ -433,57 +460,59 @@ footer ul {
     .left-half-bobby-bella h2, 
     .right-half-look-at-marco h2 {
         margin-top:20px;
-
     }
 }
+/* ===============  Media Query 3/8 End ================= */
 
-/* For sizes above iPad & above */
+
+/* ===============  Media Query 4/8 Start =============== */
 @media (min-width:768px) {
     .wrapper {
         max-width:1080px;
         width:90%;
     }
-
-    /* Delete only this horizontal nav */
+    
     ul.horizontal-main-nav {
         padding-left:2%;
     }
-
+    
     .burger-menu {
         visibility: hidden;
     }
-
-    .logo {
+    
+    .logo, 
+    .horizontal-main-nav li, 
+    .navbar-top {
         float:left;
-        width:20%;
     }
 
-    /* Top Nav */
+    .logo {
+        width:20%;
+    }
+    
     .horizontal-main-nav {
-        display:block;
         float:right;
         margin-top:20px;
         padding-left:20%;
         font-size:1rem;
     }
-
+    
     .horizontal-main-nav li {
-        float:left;
         padding:10px 25px;
     }
-
+    
     .navbar-top {
-        float:left;
         width:100%;
     }
-
+    
     .top-nav-about,
     .top-nav-blog,
     .top-nav-contact,
-    .top-nav-home {
+    .top-nav-home,
+    .horizontal-main-nav {
         display:block;
     }
-
+    
     .social-icons {
         display:inline-block;
         position:absolute;
@@ -492,15 +521,15 @@ footer ul {
         font-size:1.8rem;
         visibility:visible;
         color:white;
-        text-align: center;
+        text-align:center;
     }
-
+    
     .fab {
         margin-top:20px;
-        text-shadow: 4px 4px 4px #000; 
+        text-shadow:4px 4px 4px #000; 
     }
     /* Top Nav */
-
+    
     /* Main */
     h1 {
         font-size:2.8rem;
@@ -509,14 +538,14 @@ footer ul {
         padding-top:150px;
     }
     /* Main */
-
-
+    
+    
     /* Section One Start*/
     .header-2 {
         font-size:2rem;
         margin-top:50px;
     }    
-
+    
     .image-one, 
     .image-two, 
     .image-three {
@@ -524,84 +553,73 @@ footer ul {
         width:calc((100% - 20px) / 3);
         padding-right:0;
     }
-
+    
     .image-two {
         margin-left:10px;
         margin-right:10px;
     }
-
+    
     .image-three {
         padding-top:40px;
     }
-
+    
     .image-four {
         margin-top:40px;
         display:block;
         width:30%;
         float:left;
     }
-
+    
     .more-about-park {
         width:70%;
         float:left;
         text-align:justify;
+        margin-top:0;
     }
-
+    
     .more-about-park p {
         font-size:1rem;
     }
-
+    
     .more-about-park h2 {
         margin-left:20px;
         display:inline-block;
         width:calc(70% - 20px);
-        margin-top:0;   /*remove this*/
-    }
-
-    .more-about-park {  /*remove this */
-        float:left;
-        width:70%;
         margin-top:0;
     }
-
-    .image-four {
-        float:left;
-        width:30%;
-    }
-
-    .image-four-and-more-about-park {  /*remove this*/
+    
+    .image-four-and-more-about-park {
         width:100%;
     }
-
+    
     .more-about-park {
         margin-top:40px;
     }
-
-    .more-about-park p {   /*remove this*/
+    
+    .more-about-park p {
         margin-top:0;
         margin-bottom:0;
     }
-
+    
     .section-one p {
         width:calc(100% - 20px);
-        /* line-height:20px; */
         margin-left:20px;
     }
-
+    
     button {
         width:150px;
         height:40px;
         text-align: center;
         font-size:20px;
     }
-
+    
     .btn-1 {
         width:150px;
         height:40px;
         margin:0px 20px;
         padding:0px 10px;
     }
-
+    
     .section-one {
         padding-bottom:50px; 
     }    
@@ -613,144 +631,146 @@ footer ul {
         float:right;
         margin:0;
     }
-
+    
     .left-half-bobby-bella {
         width:50%;
         float:right;
         padding-right:20px;
     }
-
+    
     .right-half-look-at-marco {
         float:left;
         width:50%;
         padding-left:20px;
     }
-
+    
     .left-half-bobby-bella h2, 
     .right-half-look-at-marco h2 {
         margin-bottom:3px;
         text-align: left;
     }
-
+    
     .left-half-bobby-bella p,
-    .right-half-look-at-marco p  {
+    .right-half-look-at-marco p {
         font-size:0.9rem;
         line-height: 25px;
         text-align: justify;
     }
-
-    .btn-2, .btn-3 {
+    
+    .btn-2, 
+    .btn-3 {
         margin:0;
-        padding:10px 10px;
+        padding:10px;
     }
-
+    
     .image-six {
         float:left;
         width:50%;
     }
-
+    
     .article-part {
         padding-bottom:0px;
     }
     /* Article Part End */
-
+    
     /* Donation Section Start*/
     .donations {
         padding-bottom:20px;
     }
-
+    
     .donations-icons {
         margin-top:0;
     }
-
+    
     .donations-icons p {
         margin:0;
         padding:0;
     }
-
+    
     .first-pair, 
     .second-pair,
     .third-pair {
         float:left;
         width:calc(100% / 3);
     }
-
+    
     .first-pair p,
     .second-pair p, 
     .third-pair p {
         clear:both;
     }
     /* Donation Section End*/
-
+    
     /* Footer section start */
     .stay-updated {
         width:50%;
         float:left;
     }
-
+    
     .stay-updated h3, 
     .stay-updated p {
         text-align:left;
     }
-
+    
     .footer-contact {
         line-height:25px;
         width:calc(35% - 40px);
         float:left;
         margin:0 20px;
     }
-
+    
     .footer-links {
         width:15%;
         float:left;
         line-height:35px;
     }
-
+    
     .footer-links li {
-        text-align: right;
+        text-align:right;
         width:100px;
     }
-
-    .footer-contact h3{
+    
+    .footer-contact h3 {
         padding-top:0;
         margin-bottom:10px;
     }
-
+    
     .footer-contact ul, 
     .footer-links ul {
         margin:0;
     }
-
+    
     .subscribe-pair .email, 
-    .subscribe-pair button{
+    .subscribe-pair button {
         float:left;
     }
-
+    
     .subscribe-pair .email {
         width:calc(70% - 20px);
-        margin-right:10px;
+        margin-right:0px;
+        margin-top:11px;
         padding:7px 10px;
     }
-
+    
     .subscribe-pair button {
         width:30%;
         overflow:hidden;
     }
-
-    .subscribe-pair .email {
-        margin-right:0px;
-        margin-top:11px;
-    }
     /* Footer section end */
 }
+/* ===============  Media Query 4/8 End ================= */
 
+
+/* ===============  Media Query 5/8 Start =============== */
 @media (min-width:830px) and (max-width:925px) {
     .section-one p {
         line-height:25px;
         font-size:1.1rem;
     }
 }
+/* ===============  Media Query 5/8 End =============== */
 
+/* ===============  Media Query 6/8 Start =============== */
 @media (min-width:1080px) {
     .wrapper {
         max-width:1200px;
@@ -764,16 +784,15 @@ footer ul {
         width:20%;
         float:left;
     }
-
+    
     .horizontal-main-nav {
-        /* width:70%; */
         float:right;
     }
-
+    
     .horizontal-main-nav li {
         float:left;
     }
-
+    
     header {
         height:90vh;
     }
@@ -785,101 +804,110 @@ footer ul {
         line-height:63.7px;
         letter-spacing:0.8px;
     }
-
+    
     p {
         font-size: 20px;
         line-height:30px;
         letter-spacing:0.2px;
     }
-
+    
     .horizontal-main-nav li {
         font-size:1.1rem;
     }
-
+    
     .header-2 {
         padding:30px 0;
     }
-
+    
     .image-one, 
     .image-three {
         padding-right:0;
         width:calc((100% - 60px)/ 3);
     }
-
+    
     .image-two {
         margin-left:30px;
         padding-right:0;
         margin-right:30px;
         width:calc((100% - 60px) / 3);
     }
-
+    
     .btn-3 {
         margin-top:20px;
     }
-
+    
     .left-half-bobby-bella {
         margin-right:0;
         padding-left:0px;
-        padding-right: 60px;
+        padding-right:60px;
     }
-
+    
     .right-half-look-at-marco {
-        padding-left: 60px;
+        padding-left:60px;
     }
-
+    
     .left-half-bobby-bella h2, 
     .right-half-look-at-marco h2 {
         padding-top:70px;
         font-size:42px;
     }
-
+    
     .more-about-park p,
     .bobby-bella-top-half p, 
     .look-at-marco-bottom-half p {
         font-size:1.2rem;
         line-height:30px;
     }
-
-    .donations {
+    
+    .donations, .footer-section {
         padding-top:50px;
-        padding-bottom:80px;
     }
 
+    .donations {
+        padding-bottom:80px;
+    }
+    
     .email {
         text-align:left;
     }
-
+    
     .footer-section {
-        padding-top:50px;
         padding-bottom:50px;
     }
-
+    
     .footer-contact {
-        padding-left: 30px;;
+        padding-left:30px;
     }
-
+    
     .footer-contact ul {
         line-height:25px;
         width:70%;
         float:left;
     }
-
+    
     .footer-links li {
         width:auto;
     }   
 }
+/* ===============  Media Query 6/8 End ================== */
 
+
+
+/* ===============  Media Query 7/8 Start =============== */
 @media (min-width:1080px) and (max-width:1200px) {
-    .left-half-bobby-bella h2, .right-half-look-at-marco h2 {
+    .left-half-bobby-bella h2, 
+    .right-half-look-at-marco h2 {
         margin-top:0;
         padding-top:40px;
     }
-
+    
     .right-half-look-at-marco h2 {
         font-size:37px;
     }
 }
+/* ===============  Media Query 7/8 End ================= */
 
+/* ===============  Media Query 8/8 Start =============== */
 @media (min-width:1200px) {
     .section-one h2 {
         font-size:42px;
@@ -892,8 +920,10 @@ footer ul {
         line-height:30px;
         font-size:20px;
     }
-
+    
     .btn-1 {
         margin-top:20px;
     }
 }
+/* ===============  Media Query 8/8 End  ================= */
+/* ===============  Responsive Design End  =============== */
