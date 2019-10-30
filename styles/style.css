@@ -7,7 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 * {
-    /* border:1px solid crimson; */
+    border:1px solid crimson;
 }
 
 .wrapper {
@@ -72,6 +72,11 @@ body {
 .logo {
     color:white;
     margin-top:0;
+    width:50%;
+}
+
+.logo-top {
+    display:block;
 }
 
 h1,nav {
@@ -372,6 +377,10 @@ footer ul {
         width:90%;
     }
 
+    .logo {
+        width:30%;
+    }
+
     /* Delete only this horizontal nav */
     .horizontal-main-nav {
         padding-left:0%;
@@ -415,6 +424,7 @@ footer ul {
         width:90%;
     }
 
+
     /* Delete only this horizontal nav */
     ul.horizontal-main-nav {
         padding-left:2%;
@@ -426,7 +436,7 @@ footer ul {
 
     .logo {
         float:left;
-        width:30%;
+        width:20%;
     }
 
     /* Top Nav */
@@ -700,6 +710,7 @@ footer ul {
         font-size:20px;
         line-height:30px;
         letter-spacing:0.2px;
+        width:20%;
         float:left;
     }
 
