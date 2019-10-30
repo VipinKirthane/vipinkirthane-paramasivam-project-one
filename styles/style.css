@@ -7,7 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 * {
-    border:1px solid crimson;
+    /* border:1px solid crimson; */
 }
 
 .wrapper {
@@ -73,6 +73,7 @@ body {
     color:white;
     margin-top:0;
     width:50%;
+    font-size:20px;
 }
 
 .logo-top {
@@ -94,8 +95,13 @@ h1,nav {
     display:none;
 }
 
-nav, h2, h3,button {
-    font-family: 'Offside', cursive;
+h2, h3,button, .footer-links a {
+    font-family: 'Offside', regular;
+}
+
+nav {
+    font-family: 'Barlow', regular;
+    font-weight: bold;
 }
 
 nav h2 {
@@ -107,7 +113,7 @@ p,h1 {
 }
 
 h1 {
-    font-size:2rem;
+    font-size:2.5rem;
     line-height:40px;
     letter-spacing:0.5px;
     width:60%;
@@ -126,12 +132,16 @@ h1 {
     margin-top:40px;
 }
 
-h2 {
+h2,h3 {   
     text-align: left;
     line-height:24px;
     font-size:1.6rem;
     font-weight:100;
     width:100%;
+}
+
+h2 {
+    font-size:2rem;
 }
 
 .image-one, 
@@ -182,6 +192,7 @@ button {
     background-color: #116500;
     color:white;
     padding:20px 15px;
+    line-height:20px; 
     font-size:20px;
     display:block;
     width:200px;
@@ -264,7 +275,7 @@ article {
 }
 
 .donations p {
-    font-family: 'Offside', cursive;
+    font-family: 'Offside', regular;
     font-size:1.7rem;
     color:#116500;
 }
@@ -284,7 +295,7 @@ article {
     padding-top:30px;
 }
 
-.footer-section h2 {
+.footer-section h3 {
     color:white;
     text-align: center;
     margin:0;
@@ -320,7 +331,7 @@ footer nav {
     display:inline-block;
 }
 
-footer h2 {
+footer h3 {
     text-align:left;
 }
 
@@ -332,7 +343,7 @@ footer ul {
     padding:0;
 }
 
-.footer-contact h2 {
+.footer-contact h3 {
     text-align: left;
     padding-top:30px;
 }
@@ -370,7 +381,9 @@ footer ul {
 }
 /* Footer End */
 
-/* For iPhone plus & above Start*/
+
+/* Mobile-First Design */
+/* Responsive Design Start */
 @media (min-width:414px) {
     .wrapper {
         max-width:768px;
@@ -403,7 +416,14 @@ footer ul {
     }
 
 }
-/* For iPhone plus & above End */
+
+
+@media (min-width:768px) and (max-width:820px) {
+    .more-about-park p {
+        line-height:19px;
+        font-size:0.8rem;
+    }
+}
 
 @media (min-width:768px) and (max-width:868px) {
     .article-part h2 {
@@ -423,7 +443,6 @@ footer ul {
         max-width:1080px;
         width:90%;
     }
-
 
     /* Delete only this horizontal nav */
     ul.horizontal-main-nav {
@@ -536,11 +555,36 @@ footer ul {
         margin-left:20px;
         display:inline-block;
         width:calc(70% - 20px);
+        margin-top:0;   /*remove this*/
+    }
+
+    .more-about-park {  /*remove this */
+        float:left;
+        width:70%;
+        margin-top:0;
+    }
+
+    .image-four {
+        float:left;
+        width:30%;
+    }
+
+    .image-four-and-more-about-park {  /*remove this*/
+        width:100%;
+    }
+
+    .more-about-park {
+        margin-top:40px;
+    }
+
+    .more-about-park p {   /*remove this*/
+        margin-top:0;
+        margin-bottom:0;
     }
 
     .section-one p {
         width:calc(100% - 20px);
-        line-height:20px;
+        /* line-height:20px; */
         margin-left:20px;
     }
 
@@ -548,7 +592,7 @@ footer ul {
         width:150px;
         height:40px;
         text-align: center;
-        font-size:1rem;
+        font-size:20px;
     }
 
     .btn-1 {
@@ -644,7 +688,7 @@ footer ul {
         float:left;
     }
 
-    .stay-updated h2, 
+    .stay-updated h3, 
     .stay-updated p {
         text-align:left;
     }
@@ -667,7 +711,7 @@ footer ul {
         width:100px;
     }
 
-    .footer-contact h2{
+    .footer-contact h3{
         padding-top:0;
         margin-bottom:10px;
     }
@@ -690,6 +734,7 @@ footer ul {
 
     .subscribe-pair button {
         width:30%;
+        overflow:hidden;
     }
 
     .subscribe-pair .email {
@@ -699,6 +744,12 @@ footer ul {
     /* Footer section end */
 }
 
+@media (min-width:830px) and (max-width:925px) {
+    .section-one p {
+        line-height:25px;
+        font-size:1.1rem;
+    }
+}
 
 @media (min-width:1080px) {
     .wrapper {
@@ -708,7 +759,7 @@ footer ul {
     
     .logo {
         font-size:20px;
-        line-height:30px;
+        line-height:20px;
         letter-spacing:0.2px;
         width:20%;
         float:left;
@@ -728,11 +779,17 @@ footer ul {
     }
     
     header h1 {
-        width:40%;
+        width:50%;
         padding-top:150px;
         font-size:68.8px;
         line-height:63.7px;
         letter-spacing:0.8px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height:30px;
+        letter-spacing:0.2px;
     }
 
     .horizontal-main-nav li {
@@ -773,6 +830,7 @@ footer ul {
     .left-half-bobby-bella h2, 
     .right-half-look-at-marco h2 {
         padding-top:70px;
+        font-size:42px;
     }
 
     .more-about-park p,
@@ -785,6 +843,10 @@ footer ul {
     .donations {
         padding-top:50px;
         padding-bottom:80px;
+    }
+
+    .email {
+        text-align:left;
     }
 
     .footer-section {
@@ -811,5 +873,27 @@ footer ul {
     .left-half-bobby-bella h2, .right-half-look-at-marco h2 {
         margin-top:0;
         padding-top:40px;
+    }
+
+    .right-half-look-at-marco h2 {
+        font-size:37px;
+    }
+}
+
+@media (min-width:1200px) {
+    .section-one h2 {
+        font-size:42px;
+        width:100%;
+        padding-top:10px;
+        padding-bottom:30px;
+    }
+    
+    .section-one p {
+        line-height:30px;
+        font-size:20px;
+    }
+
+    .btn-1 {
+        margin-top:20px;
     }
 }
