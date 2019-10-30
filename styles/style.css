@@ -859,7 +859,8 @@ footer ul {
         line-height:30px;
     }
     
-    .donations, .footer-section {
+    .donations, 
+    .footer-section {
         padding-top:50px;
     }
 
